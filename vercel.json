@@ -1,9 +1,9 @@
 {
-  "version": 2,
-  "buildCommand": "npm ci && chmod +x node_modules/.bin/vite && npm run build",
+  "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
-  "routes": [
-    { "src": "/(.*)", "dest": "/" }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
   ]
 }
+
